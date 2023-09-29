@@ -134,6 +134,10 @@ main > #content > #pendidikan > .cardPendidikan > img{
     align-items: center;
 }
 
+main > #content > #pendidikan > .cardPendidikan > p {
+    text-align: center;
+}
+
 aside {
     flex: 1;
     width: 25%;

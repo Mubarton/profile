@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --white: white;
+    --black: #333333;
+    --mainColor: red;
+    --secColor: aqua;
+}
+
+.navbarContainer {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    padding-block: .5rem;
+    background-color: var(--secColor);
+    z-index: 999;
+}
+
+.navbarContainer > .logo > img{
+    max-width: 50px;
+}
+
+.navList ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.navList > ul > li {
+    list-style: none;
+}
+
+.navList > ul > li > a {
+    text-decoration: none;
+    color: var(--mainColor);
+    padding: .5rem 1.5rem;
+    transition: all .2s ease-in-out;
+    border-radius: 999px;
+}
+
+.navList > ul > li > a:hover{
+    background-color: var(--mainColor);
+    color: var(--secColor);
+}
+
+main > #hero {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 15px;
+}
+
+main > #hero > #heroContent > h1,p {
+    padding: 10px;
+}
+
+main > #hero > #heroImage > img {
+    border-radius: 999px;
+    max-width: 300px;
+    border: solid 0.2rem;
+}
+
+main > #pendidikan {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main > #pendidikan > .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+}
+
+main > #pendidikan > .card > img{
+    max-width: 500px;
+    width: 30%;
+    object-fit: contain;
+}
